@@ -78,5 +78,3 @@ max5ins %>%
   labs(title = "Top 5 companies highest number or insured employees",
        x = "Company name", y = "Ammount of insured employees")
 
-#4
-library(shiny)

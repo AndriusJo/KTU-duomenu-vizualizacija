@@ -19,7 +19,8 @@ ui <- fluidPage(
 server = function(input, output, session) {
   duom = read.csv("data/lab_sodra.csv")
   data = duom %>%
-    filter(ecoActCode == 494100)
+    filter(ecoActCode == 494100) %>%
+    mutate(month_amt=as.integer(substr(month, 5 ,7)))
   
   kodai = data %>%
     group_by(name) %>%
@@ -32,8 +33,10 @@ server = function(input, output, session) {
   output$distPlot = renderPlot({
     data %>%
       filter(code == input$Company_code) %>%
-      ggplot(aes(x = month, y = avgWage)) +
-      geom_line()+
+      ggplot(aes(x = month_amt, y = avgWage)) +
+      scale_x_continuous("month", breaks = 1:12, limits = c(1,12)) +
+      theme_grey() +
+      geom_line(colour = 'red')+
       labs(x = "Month", y = "Average Wage")
   })
 }

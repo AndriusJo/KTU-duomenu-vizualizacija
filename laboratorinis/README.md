@@ -1,15 +1,15 @@
 # R Laboratorinis darbas: duomenų vizualizacija
 
 | Variantas | ecoActCode |
-|------------- | ------------- |
-|20   | 11111111111 |
+| --------- | ---------- |
+|     2     |   494100   |
 
 
 ### 1. Užduotis
 
 Atsakymas:
 
-![histograma](img/pavyzdys1.png)
+![histograma](img/RPlot1.png)
 
 Išvados:
 
@@ -17,7 +17,7 @@ Išvados:
 
 Atsakymas:
 
-![atlyginimai](img/pavyzdys2.png)
+![atlyginimai](img/RPlot2.png)
 
 Išvados:
 
@@ -26,7 +26,7 @@ Išvados:
 
 Atsakymas:
 
-![apdraustieji](img/pavyzdys3.png)
+![apdraustieji](img/RPlot3.png)
 
 Išvados:
 
@@ -35,4 +35,4 @@ Išvados:
 
 Shiny R aplikacijos nuotrauka:
 
-![shiny app](img/shiny_example.png)
+![shiny app](img/ShinyPlot.png)
