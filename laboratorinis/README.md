@@ -11,13 +11,13 @@ Atsakymas:
 
 ![histograma](img/RPlot1.png)
 
-Išvados: Daugiausia žmonių gauna atlyginimus tarp 10 tūkst. ir 150 tūkst.  Didžiausi atlyginimai siekia virš 750 tūkst. Labai netolygus atlyginimų pasiskirstymas.
+Išvados:
 
 ### 2. Užduotis
 
 Atsakymas:
 
-![atlyginimai](img/Rplot2.png)
+![atlyginimai](img/RPlot2.png)
 
 Išvados:
 
@@ -26,7 +26,7 @@ Išvados:
 
 Atsakymas:
 
-![apdraustieji](img/Rplot3.png)
+![apdraustieji](img/RPlot3.png)
 
 Išvados:
 

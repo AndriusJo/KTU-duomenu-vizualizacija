@@ -26,8 +26,7 @@ ggplot(data = data, aes(avgWage)) +
 duom = read.csv("data/lab_sodra.csv")
 
 data = duom %>%
-  filter(ecoActCode == 494100) %>%
-  mutate(month_amt=as.integer(substr(month, 5 ,7)))
+  filter(ecoActCode == 494100) 
 data = data[!is.na(data$avgWage),]
 
 
@@ -49,8 +48,7 @@ max5 = data %>%
 max5full = data %>% filter(name %in% max5$name)
 
 max5full %>%
-  ggplot(aes(x = month_amt, y = avgWage, group = name)) +
-  scale_x_continuous("month", breaks = 1:12, limits = c(1,12)) +
+  ggplot(aes(x = month, y = avgWage, group = name)) +
   geom_line(aes(colour = name))+
   labs(title = "Top 5 Companies with Highest Average Wage", x = "Month", y = "Average Wage")
   
@@ -77,6 +75,6 @@ max5ins = max5full %>%
 max5ins %>%
   ggplot(aes(x = reorder(name, -insured), y = insured, group = name)) +
   geom_col(aes(fill = name)) +
-  labs(title = "Top 5 companies highest number of insured employees",
+  labs(title = "Top 5 companies highest number or insured employees",
        x = "Company name", y = "Ammount of insured employees")
 
