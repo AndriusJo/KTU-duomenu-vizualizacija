@@ -17,7 +17,7 @@ Išvados:
 
 Atsakymas:
 
-![atlyginimai](img/RPlot2.png)
+![atlyginimai](img/Rplot2.png)
 
 Išvados:
 
@@ -26,7 +26,7 @@ Išvados:
 
 Atsakymas:
 
-![apdraustieji](img/RPlot3.png)
+![apdraustieji](img/Rplot3.png)
 
 Išvados:
 
